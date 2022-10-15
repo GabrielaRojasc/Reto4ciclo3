@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  table, th, td {
+    border:black;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://localhost:8090/"></script>
+  <script src="misFunciones.js"></script>
+  <title>Ortopedic</title>
+</head>
+<body onload="traerDatosOrtopedic()">
+<h1>Ortopedic</h1>
+<table id="resultado">
+
+</table>
+<h3>Agregar Ortopedic</h3>
+<input id="id" placeholder="ID del Ortopedic"><br><br>
+<input id="name" placeholder="Nombre del Ortopedic"><br><br>
+<input id="brand" placeholder="Marca del Ortopedic"><br><br>
+<input id="model" placeholder="Modelo del Órtesis"><br><br>
+<input id="category_id" placeholder="Id Categoria del Ortopedic"><br><br>
+
+<button onclick="guardarOrtopedic()">Guardar</button>
+<button onclick="location.href='index.html'">Volver</button>
+</body>
+</html>

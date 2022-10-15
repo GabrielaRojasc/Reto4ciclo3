@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=" stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="webjars/bootstrap/js/bootstrap.min.js"></script>
+
+    <title>Ortopedic 4.0</title>
+</head>
+<body>
+<h1>Bienvenido a Ortopedic 4.0</h1>
+    <div class="container unauthenticated">
+        Para iniciar sesión haz click <a href="/oauth2/authorization/github">aquí</a>
+    </div>
+    <div class= "container authenticated" style="display: none">
+        Haz sido autenticado : <span id="usuario"></span>
+        <button onclick="location.href='homePage.html';">Continuar</button>
+    </div>
+</body>
+<script> type= "text/javascript">
+    $.get("/user", function (data){
+        $("#usuario").html(data.name);
+        $(".unauthenticated").hide();
+        $(".authenticated").show();
+});
+
+</script>
+</html>

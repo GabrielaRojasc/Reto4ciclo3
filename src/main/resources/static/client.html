@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  table, th, td {
+    border:black;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://localhost:8090"></script>
+  <title>Clientes</title>
+</head>
+<body onload="traerDatosClientes()">
+<h1>Clientes</h1>
+
+<table id="resultado">
+
+</table>
+<h3>Agregar Clientes</h3>
+<input id="idCliente" placeholder="ID del Cliente"><br><br>
+<input id="nameCliente" placeholder="Nombre del Cliente"><br><br>
+<input id="email" placeholder="Correo del Órtesis"><br><br>
+<input id="age" placeholder="Edad del Cliente"><br><br>
+
+
+</table>
+
+
+<button onclick="guardarClientes()">Guardar</button>
+<button onclick="ActualizarClientes()">Actualizar</button>
+<button onclick="location.href='index.html'">Volver</button>
+</body>
+</html>
